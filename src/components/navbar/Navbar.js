@@ -6,30 +6,27 @@ import Counter from "../Contador/counter";
 
 
 const Navbar = () => {
-
-const text = "click"
-const handClick = () => {
-    
-}
-
-
+  const handleClick = () => {};
   return (
     <nav className="Navbar">
-      <div class="wrapper">
+      <div class="container">
         <div class="logo">
-          <p>logo</p>
-          <p>Stellar</p>
-          <p>Dream</p>
+          <img src="img/nano2.png" alt="" />
         </div>
         <div class="menu">
-          <Button handClick={handClick} label="Gamer" />
-          <Button handClick={handClick} label="Normal" />
-          <Button handClick={handClick} label="Noise Canselling" />
-          <Button handClick={handClick} label="Headphones" />
+          <h1>
+            Crazy<swap>Robot</swap>
+          </h1>
+          
+            <Button handClick={handleClick} label="Gamer" />
+            <Button handClick={handleClick} label="Normal" />
+            <Button handClick={handleClick} label="Noise Cancelling" />
+            <Button handClick={handleClick} label="Headphones" />
+          
         </div>
+        <Cartwidget />
       </div>
-      <Cartwidget />
-      <Counter />
+      
     </nav>
   );
 };
