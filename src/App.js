@@ -6,10 +6,15 @@ import ItemListContainer from "./components/itemListContainer/itemListContainer"
 import Counter from "./components/Contador/counter";
 
 function App() {
+
+const handleOnAdd = (quantity) => {
+  console.log("la cantidad agregada es: ${quantity}")
+}
+
   return (
     <div>
       <Navbar />
-      <Counter />
+      <Counter stock={15} onAdd={handleOnAdd}/>
       <ItemListContainer hey="Hola Adrian" />
     </div>
   );
