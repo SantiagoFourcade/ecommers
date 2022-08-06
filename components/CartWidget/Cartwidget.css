@@ -1,0 +1,6 @@
+.carrito {
+    color: black;
+    width: 150px;
+    height: 100px;
+    display: flex;
+}
