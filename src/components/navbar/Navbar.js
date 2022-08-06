@@ -1,33 +1,40 @@
-import React from "react"
+import React from "react";
 import "./Navbar.css";
 import Cartwidget from "../CartWidget/Cartwidget";
 import Button from "../Button/button";
-import Counter from "../Contador/counter";
-
+//import Counter from "../Contador/counter";
 
 const Navbar = () => {
   const handleClick = () => {};
   return (
-    <nav className="Navbar">
-      <div class="container">
-        <div class="logo">
-          <img src="img/nano2.png" alt="" />
-        </div>
-        <div class="menu">
-          <h1>
+    <>
+    <header>
+      <div class="logo">
+    <img src="img/Auris.png" alt="" />
+          <h1 class="name">
             Crazy<swap>Robot</swap>
           </h1>
-          
-            <Button handClick={handleClick} label="Gamer" />
-            <Button handClick={handleClick} label="Normal" />
-            <Button handClick={handleClick} label="Noise Cancelling" />
-            <Button handClick={handleClick} label="Headphones" />
-          
+          </div>
+          <div class="nav">
+          <button class="">
+            Sign Up
+          </button>
+          <Cartwidget />
+          </div>
+    </header>
+    <nav className="Navbar">
+      <div class="container">
+       
+        <div class="menu">
+          <Button handClick={handleClick} label="Gamer" />
+          <Button handClick={handleClick} label="Normal" />
+          <Button handClick={handleClick} label="Noise Cancelling" />
+          <Button handClick={handleClick} label="Headphones" />
         </div>
-        <Cartwidget />
+        
       </div>
-      
     </nav>
+    </>
   );
 };
 

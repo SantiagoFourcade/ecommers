@@ -1,9 +1,12 @@
 import React from "react"
-import logo from "./logo.svg";
+
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import ItemListContainer from "./components/itemListContainer/itemListContainer";
 import Counter from "./components/Contador/counter";
+import ItemDetailsContainer from "./components/ItemDetailsContainer/ItemDetailsContainer";
+
+
 
 function App() {
 
@@ -15,7 +18,8 @@ const handleOnAdd = (quantity) => {
     <div>
       <Navbar />
       <Counter stock={15} onAdd={handleOnAdd}/>
-      <ItemListContainer hey="Hola Adrian" />
+      <ItemDetailsContainer />
+      <ItemListContainer hey="" />
     </div>
   );
 }
