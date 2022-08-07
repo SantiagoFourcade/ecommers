@@ -2,7 +2,8 @@ import React from "react";
 import "./Navbar.css";
 import Cartwidget from "../CartWidget/Cartwidget";
 import Button from "../Button/button";
-//import Counter from "../Contador/counter";
+import {Link} from "react-router-dom"
+
 
 const Navbar = () => {
   const handleClick = () => {};
@@ -10,9 +11,9 @@ const Navbar = () => {
     <>
     <header>
       <div class="logo">
-    <img src="img/Auris.png" alt="" />
+    <Link to="/"><img src="img/Auris.png" alt="" /></Link>
           <h1 class="name">
-            Crazy<swap>Robot</swap>
+            Ecommers
           </h1>
           </div>
           <div class="nav">
@@ -26,7 +27,9 @@ const Navbar = () => {
       <div class="container">
        
         <div class="menu">
-          <Button handClick={handleClick} label="Gamer" />
+          
+          
+          <Button handClick={handleClick} label="Gamer"/>
           <Button handClick={handleClick} label="Normal" />
           <Button handClick={handleClick} label="Noise Cancelling" />
           <Button handClick={handleClick} label="Headphones" />

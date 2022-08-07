@@ -31,6 +31,7 @@ header {
   justify-content: center;
   margin: auto;
   align-items: center;
+  background-color: rgb(32, 30, 30);
 }
 
 .logo {
@@ -48,4 +49,5 @@ header {
 .menu {
   height: 100%;
   text-align: center;
+
 }
