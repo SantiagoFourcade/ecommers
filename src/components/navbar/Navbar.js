@@ -1,12 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import Cartwidget from "../CartWidget/Cartwidget";
-import Button from "../Button/button";
+//import Button from "../Button/button";
 import {Link} from "react-router-dom"
 
 
 const Navbar = () => {
-  const handleClick = () => {};
+  //const handleClick = () => {};
   return (
     <>
     <header>
@@ -17,7 +17,7 @@ const Navbar = () => {
           </h1>
           </div>
           <div class="nav">
-          <button class="">
+          <button class="Option">
             Sign Up
           </button>
           <Cartwidget />
@@ -27,12 +27,11 @@ const Navbar = () => {
       <div class="container">
        
         <div class="menu">
+          <Link to="/category/Gamer" class="Option">Gamer</Link>
+          <Link to="/category/Normal" class="Option">Normal</Link>
+          <Link to="/category/Noise Cancelling" class="Option">Noise Cancelling</Link>
+          <Link to="/category/Headphones" class="Option">Headphones</Link>
           
-          
-          <Button handClick={handleClick} label="Gamer"/>
-          <Button handClick={handleClick} label="Normal" />
-          <Button handClick={handleClick} label="Noise Cancelling" />
-          <Button handClick={handleClick} label="Headphones" />
         </div>
         
       </div>
