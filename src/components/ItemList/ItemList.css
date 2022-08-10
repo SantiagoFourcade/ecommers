@@ -1,3 +1,10 @@
 .ItemList {
-    display: flex;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 133px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    gap: 16rem;
+    /*align-items: center;*/
+    
 }

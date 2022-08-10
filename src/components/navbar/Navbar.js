@@ -22,6 +22,7 @@ const Navbar = () => {
           </button>
           <Cartwidget />
           </div>
+          
     </header>
     <nav className="Navbar">
       <div class="container">
