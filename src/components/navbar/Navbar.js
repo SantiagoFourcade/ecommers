@@ -5,6 +5,7 @@ import Cartwidget from "../CartWidget/Cartwidget";
 import {Link} from "react-router-dom"
 
 
+
 const Navbar = () => {
   //const handleClick = () => {};
   return (
@@ -16,27 +17,22 @@ const Navbar = () => {
             Ecommers
           </h1>
           </div>
-          <div class="nav">
-          <button class="Option">
-            Sign Up
-          </button>
-          <Cartwidget />
-          </div>
-          
-    </header>
-    <nav className="Navbar">
-      <div class="container">
-       
-        <div class="menu">
+          <div class="menu">
           <Link to="/category/Gamer" class="Option">Gamer</Link>
           <Link to="/category/Normal" class="Option">Normal</Link>
           <Link to="/category/Noise Cancelling" class="Option">Noise Cancelling</Link>
           <Link to="/category/Headphones" class="Option">Headphones</Link>
           
         </div>
-        
-      </div>
-    </nav>
+            <div class="nav">
+              <Link to="/Carrito"class="Option">
+               Log In
+              </Link>
+              <Cartwidget />
+            </div>
+          
+    </header>
+ 
     </>
   );
 };

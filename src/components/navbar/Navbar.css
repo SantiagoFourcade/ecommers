@@ -4,7 +4,7 @@ img {
 }
 
 header {
-  max-width: 1652px;
+  /*max-width: 1652px;*/
   width: 100%;
   background-color: black;
   display: flex;
@@ -42,10 +42,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .name {
   margin-top: 0.2rem;
+  padding: 20px;
 }
 
 .menu {

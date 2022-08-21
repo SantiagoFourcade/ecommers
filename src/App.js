@@ -5,6 +5,10 @@ import ItemListContainer from "./components/itemListContainer/itemListContainer"
 import ItemDetailsContainer from "./components/ItemDetailsContainer/ItemDetailsContainer";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {CartContextProvider} from "./context/CartContext"
+import Carrito from "./components/Carrito/Carrito"
+import CheckOut from "./components/CheckOut/CheckOut";
+
+//import {AuthProvider} from "./context/authContext"
 
 
 function App() {
@@ -12,17 +16,25 @@ function App() {
 
   return (
     <div class="App">
-      <CartContextProvider>
+      
+      
       <BrowserRouter>
+      <CartContextProvider>
+        
         <Navbar />
         <Routes>
-          <Route path="/" element={<ItemListContainer hey="Todos los productos" />}/>
-          <Route path="/category/:categoryId" element={<ItemListContainer hey="Listado Filtrado"/>}/>
+          <Route path="/" element={<ItemListContainer hey="Nuestros productos" />}/>
+          <Route path="/category/:categoryId" element={<ItemListContainer hey="Cargando productos"/>}/>
           <Route path="/detail/:productId" element={<ItemDetailsContainer />}/>
+          <Route path="/Carrito" element={<Carrito/>}/>
+          <Route path="/CheckOut" element={(<CheckOut/>)}/>
           <Route path="*" element={<h1>404 NOT FOUND</h1>}/>
         </Routes>
+        
+        </CartContextProvider>
       </BrowserRouter>
-      </CartContextProvider>
+      
+      
     </div>
   );
 }

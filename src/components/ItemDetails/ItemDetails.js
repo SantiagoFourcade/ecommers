@@ -6,6 +6,7 @@ import ItemCount from "../ItemCount/ItemCount"
 import CartContext from "../../context/CartContext"
 
 
+
 const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     const [quantityToAdd, setQuantityToAdd] = useState(0)
 
@@ -49,7 +50,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     quantityToAdd === 0 ? (
                         <ItemCount onAdd={handleOnAdd} stock={stock} initial={productQuantity}/>
                     ) : (
-                        <Link to='/cart' class="Option">Finalizar compra</Link>
+                        <Link to="/Carrito" class="Option">Finalizar compra</Link>
                     )
                 }
             </footer>

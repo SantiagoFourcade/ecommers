@@ -3,6 +3,7 @@ import "./Cartwidget.css";
 import {useContext} from "react"
 import {Link} from "react-router-dom"
 import CartContext from "../../context/CartContext"
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const Cartwidget = () => {
@@ -11,8 +12,8 @@ const Cartwidget = () => {
   const quantity = getQuantity()
 
   return (
-    <Link to="/cart" class="CartWidget">
-      <img src="img/carrito.png" alt="cart-widget" class="CartWImg" />
+    <Link to="/Carrito" class="CartWidget">
+      <FaShoppingCart/>
       {quantity}
     </Link>
   );
