@@ -5,8 +5,9 @@
     padding: 20px;
     margin: 30px;
     font-size: 10px;
-    background-color: papayawhip;
+    background-color: white;
     border: 1px solid #e1e1e1;
+    border-color: black;
     border-radius: 10px;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .ItemsCarritoConInfo {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
@@ -50,4 +51,10 @@
 
 .ItemsCarritoConFooter {
     display: flex;
+}
+
+.ItemsCarritoHeader {
+    width: 50%;
+    color: black;
+    background-color: white;
 }

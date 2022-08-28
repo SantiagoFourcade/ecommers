@@ -16,6 +16,7 @@ const ItemsCarrito = ({id, name, quantity, price}) => {
                 <h2 class="ItemsCarritoTitle">
                     {name}
                 </h2>
+            
             </header>
             <section class="ItemsCarritoContainer">
                 <p class="ItemsCarritoConInfo">
