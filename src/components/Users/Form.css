@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #181818;
+    color: white;
+}
+
+input {
+    width: 50%;
+    outline: 0;
+    background-color: #181818;
+    border: none;
+    border-bottom: 1px solid green;
+    padding: .8em;
+    color: white;
+}
+
+button {
+    background-color: green;
+    color: black;
+    border: none;
+    width: 45%;
+    text-transform: uppercase;
+    padding: 1em;
+    
+}
+
+.confBtn:hover, .confBton:focus {
+    background-color: black;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+.form {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+   
+   
+}
+
+

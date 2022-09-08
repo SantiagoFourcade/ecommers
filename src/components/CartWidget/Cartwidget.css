@@ -3,7 +3,7 @@
     margin-right: 20px;
     padding: 14px;
     font-size: 8px;
-    background: violet;
+    background: green;
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -18,5 +18,13 @@
     cursor: pointer;
     outline: inherit;
     font-size: medium;
+    color: black;
+}
+
+.CartWidget:hover, .CartWidget:focus {
+    background-color: #181818;
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
 }
 

@@ -25,9 +25,7 @@ const Navbar = () => {
           
         </div>
             <div class="nav">
-              <Link to="/Carrito"class="Option">
-               Log In
-              </Link>
+              
               <Cartwidget />
             </div>
           

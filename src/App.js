@@ -7,6 +7,8 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {CartContextProvider} from "./context/CartContext"
 import Carrito from "./components/Carrito/Carrito"
 import CheckOut from "./components/CheckOut/CheckOut";
+import Form from "./components/Users/Form";
+
 
 //import {AuthProvider} from "./context/authContext"
 
@@ -28,6 +30,7 @@ function App() {
           <Route path="/detail/:productId" element={<ItemDetailsContainer />}/>
           <Route path="/Carrito" element={<Carrito/>}/>
           <Route path="/CheckOut" element={<CheckOut/>}/>
+          <Route path="/Form" element={<Form/>}/>
           <Route path="*" element={<h1>404 NOT FOUND</h1>}/>
         </Routes>
         

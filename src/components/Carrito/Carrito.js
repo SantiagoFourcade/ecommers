@@ -17,12 +17,14 @@ const Carrito = () => {
     }
 
     return (
-        <div>
+        <div class="Cart">
             <h1>Carrito</h1>
             {cart.map(p=><ItemsCarrito kay={p.id}{...p}/>)}
             <h3>Total:${total}</h3>
+            <div class="btnControl">
             <button onClick={() => clearCart()} class="LimpiarCartBtn">Limpiar Carrito</button>
             <Link to="/CheckOut" class="CheackOutBtn">CheckOut</Link>
+            </div>
         </div>
     )
 }

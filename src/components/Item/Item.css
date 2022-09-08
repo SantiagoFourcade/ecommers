@@ -46,8 +46,8 @@ color: white;
     margin: 0 50px;
     width: auto;
     padding: 12px;
-    font-size: 12px;
-    background: #8c30f5;
+    font-size: 15px;
+    background: green;
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -57,9 +57,17 @@ color: white;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #ffffff;
+    color: black;
+    font-weight: bolder;
     border: none;
     border-style: none;
     cursor: pointer;
     outline: inherit;
+}
+
+.Option:hover, .Option:focus {
+background-color: #181818;
+color: white;
+transition: background-color .5s ease-out;
+outline: 0;
 }

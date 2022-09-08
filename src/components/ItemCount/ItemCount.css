@@ -14,7 +14,7 @@
     width: auto;
     padding: 12px;
     font-size: 8px;
-    background: #8C30F5;
+    background: green;
     border-radius: 8px;
     display: flex;
     align-self: center;
@@ -28,6 +28,11 @@
     cursor: pointer;
     outline: inherit;
     font-size: larger;
+}
+
+.Button:hover, .Button:focus {
+    background-color: #181818;
+    
 }
 
 .Number {

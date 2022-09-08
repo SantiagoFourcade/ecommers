@@ -4,7 +4,7 @@
     height: 600px;
     padding: 30px;
     margin: 30px;
-    font-size: 10px;
+    font-size: 12px;
     background-color: black;
     border: 1px solid #e1e1e1;
     border-radius: 10px;
@@ -26,9 +26,10 @@
 
 .Info {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 15px;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .Button {

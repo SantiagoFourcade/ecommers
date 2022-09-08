@@ -5,10 +5,11 @@
     padding: 20px;
     margin: 30px;
     font-size: 10px;
-    background-color: white;
+    background-color: #181818;
     border: 1px solid #e1e1e1;
     border-color: black;
     border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
 .ItemsCarritoContainer {
@@ -32,7 +33,7 @@
     width: auto;
     padding: 12px;
     font-size: 8px;
-    background: #8C30F5;
+    background: green;
     border-radius: 8px;
     flex: none;
     display: flex;
@@ -49,12 +50,20 @@
     outline: inherit;
 }
 
+.ItemsCarritoBtn:hover, .ItemsCarritoBtn:focus {
+    background-color: black;
+    color: white;
+    transition: background-color .5s ease-out;
+    outline: 0;
+}
+
 .ItemsCarritoConFooter {
     display: flex;
 }
 
 .ItemsCarritoHeader {
     width: 50%;
-    color: black;
-    background-color: white;
+    color: white;
+    font-size: 12px;
+    background-color: #181818;
 }

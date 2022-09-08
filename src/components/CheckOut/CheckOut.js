@@ -3,6 +3,8 @@ import CartContext from "../../context/CartContext"
 import { dataBase } from "../../Servicios/Firebase"
 import { addDoc, collection, updateDoc, doc, getDocs, query, where, documentId, writeBatch} from "firebase/firestore"
 import { useNavigate } from "react-router-dom"
+import Form from "../Users/Form"
+
 
 
 const CheckOut = () => {
@@ -108,7 +110,8 @@ const CheckOut = () => {
         <>
         
         <h1>CheckOut</h1>
-        <button class="" onClick={createOrder}>Generar Orden</button>
+        <Form />
+        
         
         </>
     )
